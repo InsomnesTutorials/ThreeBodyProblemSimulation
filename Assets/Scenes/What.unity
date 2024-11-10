@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d964433298b435a8a84ce322c24357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravitationalConstant: 1
+  gravitationalConstant: 0.75
   body1: {fileID: 1401667521}
   body2: {fileID: 894592984}
   body3: {fileID: 1929179962}
@@ -412,11 +412,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 50923776891638660, guid: 1a083d96b3e3844de9d1d2085beff4eb, type: 3}
       propertyPath: initialVelocity.x
-      value: 0.3471169
+      value: 0.442591
       objectReference: {fileID: 0}
     - target: {fileID: 50923776891638660, guid: 1a083d96b3e3844de9d1d2085beff4eb, type: 3}
       propertyPath: initialVelocity.y
-      value: 0.5327249
+      value: 0.423514
       objectReference: {fileID: 0}
     - target: {fileID: 7388839932550056845, guid: 1a083d96b3e3844de9d1d2085beff4eb, type: 3}
       propertyPath: m_Name
@@ -509,11 +509,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 50923776891638660, guid: 1a083d96b3e3844de9d1d2085beff4eb, type: 3}
       propertyPath: initialVelocity.x
-      value: -0.6942338
+      value: -0.885182
       objectReference: {fileID: 0}
     - target: {fileID: 50923776891638660, guid: 1a083d96b3e3844de9d1d2085beff4eb, type: 3}
       propertyPath: initialVelocity.y
-      value: -1.0654498
+      value: -0.847028
       objectReference: {fileID: 0}
     - target: {fileID: 50923776891638660, guid: 1a083d96b3e3844de9d1d2085beff4eb, type: 3}
       propertyPath: initialAcceleration.x
@@ -598,11 +598,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 50923776891638660, guid: 1a083d96b3e3844de9d1d2085beff4eb, type: 3}
       propertyPath: initialVelocity.x
-      value: 0.3471169
+      value: 0.442591
       objectReference: {fileID: 0}
     - target: {fileID: 50923776891638660, guid: 1a083d96b3e3844de9d1d2085beff4eb, type: 3}
       propertyPath: initialVelocity.y
-      value: 0.5327249
+      value: 0.423514
       objectReference: {fileID: 0}
     - target: {fileID: 50923776891638660, guid: 1a083d96b3e3844de9d1d2085beff4eb, type: 3}
       propertyPath: initialAcceleration.x
