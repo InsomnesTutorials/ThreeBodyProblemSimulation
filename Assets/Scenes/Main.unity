@@ -508,6 +508,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 880740336}
     m_Modifications:
     - target: {fileID: 50923776891638660, guid: 1a083d96b3e3844de9d1d2085beff4eb, type: 3}
+      propertyPath: mass
+      value: 1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 50923776891638660, guid: 1a083d96b3e3844de9d1d2085beff4eb, type: 3}
       propertyPath: initialVelocity.x
       value: -0.6942338
       objectReference: {fileID: 0}

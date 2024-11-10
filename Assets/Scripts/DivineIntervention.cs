@@ -13,11 +13,11 @@ public class DivineIntervention : MonoBehaviour
     
     private void FixedUpdate()
     {
-        body1.ApplyAcceleration( -gravitationalConstant  * (body1.getPosition - body2.getPosition) / Mathf.Pow((body1.getPosition - body2.getPosition).magnitude, 3) 
-                                 - gravitationalConstant  * (body1.getPosition - body3.getPosition) / Mathf.Pow((body1.getPosition - body3.getPosition).magnitude, 3));
-        body2.ApplyAcceleration( -gravitationalConstant  * (body2.getPosition - body1.getPosition) / Mathf.Pow((body2.getPosition - body1.getPosition).magnitude, 3) 
-                                 - gravitationalConstant  * (body2.getPosition - body3.getPosition) / Mathf.Pow((body2.getPosition - body3.getPosition).magnitude, 3));
-        body3.ApplyAcceleration( -gravitationalConstant  * (body3.getPosition - body1.getPosition) / Mathf.Pow((body3.getPosition - body1.getPosition).magnitude, 3) 
-                                 - gravitationalConstant  * (body3.getPosition - body2.getPosition) / Mathf.Pow((body3.getPosition - body2.getPosition).magnitude, 3));
+        body1.ApplyAcceleration( -gravitationalConstant  * body2.getMass * (body1.getPosition - body2.getPosition) / Mathf.Pow((body1.getPosition - body2.getPosition).magnitude, 3) 
+                                 - gravitationalConstant  * body3.getMass * (body1.getPosition - body3.getPosition) / Mathf.Pow((body1.getPosition - body3.getPosition).magnitude, 3));
+        body2.ApplyAcceleration( -gravitationalConstant  * body1.getMass * (body2.getPosition - body1.getPosition) / Mathf.Pow((body2.getPosition - body1.getPosition).magnitude, 3) 
+                                 - gravitationalConstant  * body3.getMass * (body2.getPosition - body3.getPosition) / Mathf.Pow((body2.getPosition - body3.getPosition).magnitude, 3));
+        body3.ApplyAcceleration( -gravitationalConstant  * body1.getMass * (body3.getPosition - body1.getPosition) / Mathf.Pow((body3.getPosition - body1.getPosition).magnitude, 3) 
+                                 - gravitationalConstant  * body2.getMass * (body3.getPosition - body2.getPosition) / Mathf.Pow((body3.getPosition - body2.getPosition).magnitude, 3));
     }
 }
