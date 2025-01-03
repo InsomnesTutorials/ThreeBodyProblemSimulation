@@ -32,6 +32,5 @@ public class CelestialBody : MonoBehaviour
     {
         velocity += acceleration * Time.fixedDeltaTime;
         transform.position += (Vector3) velocity * Time.fixedDeltaTime;
-
     }
 }
