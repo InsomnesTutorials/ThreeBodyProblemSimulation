@@ -7,6 +7,12 @@ public class GameManager : MonoBehaviour
 {
 
     [SerializeField] private GameObject uiMenu;
+
+    private void Start()
+    {
+        uiMenu.SetActive(false);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
