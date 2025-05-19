@@ -10,6 +10,11 @@ public class DivineIntervention : MonoBehaviour
     [SerializeField] CelestialBody body1;
     [SerializeField] private CelestialBody body2;
     [SerializeField] private CelestialBody body3;
+
+    void Start()
+    {
+        
+    }
     
     private void FixedUpdate()
     {

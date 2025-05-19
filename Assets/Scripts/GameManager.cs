@@ -25,10 +25,16 @@ public class GameManager : MonoBehaviour
         }
     }
     
-    private void ToggleMenu()
+    public void ToggleMenu()
     {
         uiMenu.SetActive(!uiMenu.activeSelf);
         Time.timeScale = uiMenu.activeSelf ? 0 : 1;
+        
+        if (!uiMenu.activeSelf)
+        {
+            slider.value = 1;
+            sliderValueText.text = "1.00";
+        }
     }
 
     public void OnSliderChanged()
